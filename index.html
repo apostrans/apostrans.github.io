@@ -687,7 +687,7 @@
             {
                 title: "Short movie (EN → MK)",
                 category: "Short Movie",
-                description: "Full English to Macedonian translation, spotting, and line-break optimization tailored for streaming platform requirements (Netflix/Amazon guidelines compliant).",
+                description: "Short movie made with AI about Human Expirience",
                 url: "https://www.youtube.com/embed/Z_wtV86iy6Q",
             },
             {
@@ -698,10 +698,9 @@
             },
             {
                 title: "AI Dubbing (EN → MK)",
-                category: "Kids cartons",
+                category: "Kids",
                 description: "English to Macedonian AI Dubbing for short cartoon.",
                 url: "https://www.youtube.com/embed/WQCdNSZZYDU",
-                subtitle: "[ Гласовна локализација (Dub) направена со AI]"
             }
         ];
 
@@ -711,7 +710,7 @@
             document.getElementById('videoTitle').innerText = vid.title;
             document.getElementById('videoCategoryBadge').innerText = vid.category;
             document.getElementById('videoDescription').innerText = vid.description;
-            document.getElementById('activeSubtitleText').innerText = vid.subtitle;
+            document.getElementById('activeSubtitleText').innerText = vid.subtitle || "";
 
             for (let i = 0; i < 3; i++) {
                 const btn = document.getElementById('vid-btn-' + i);
